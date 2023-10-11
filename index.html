@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hot and Cold</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Hot and Cold</h1>
+    <p id="wins">Wins: 0</p>
+    <form>
+        Make Your Guess: <br>
+        <br></br>
+        <input type="button" id="plus" value="-" onClick="decreaseGuess()">
+        <input type="text" id="inputbox">
+        <input type="button" id="plus" value="+" onClick="increaseGuess()">
+        <br><br>
+        <input type="button" id="submit" value="Guess" onclick="calculate()">
+    </form>
+    <p id="result"></p>
+    <p id="turns"></p>
+
+
+    <div id="footer">
+        <h3>How to Play</h3>
+    <p>The point of this game is to guess the correct number from 0-100. The closer your guess, the warmer your result will be. No binary searching!</p>
+    <p>Copyright © Jialiang Cao 2023</p>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
